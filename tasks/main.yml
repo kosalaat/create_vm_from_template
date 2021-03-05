@@ -29,7 +29,7 @@
     folder: "{{ vcenter_folder }}" 
     datacenter: "{{ vcenter_datacenter }}"
     cluster: "{{ vcenter_cluster }}"
-    # esxi_hostname: "{{ vm_esxi_hostname }}"
+    esxi_hostname: "{{ vm_esxi_hostname }}"
     name: "{{ vm_name }}"
     state: poweredon
     template: "{{ vm_template }}"

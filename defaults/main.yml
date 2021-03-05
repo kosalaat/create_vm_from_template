@@ -42,3 +42,5 @@ vm_ip_netmask: '255.255.255.0'
 vm_ip_gateway: ''
 # VM DNS Address
 vm_ip_dns: [ '8.8.8.8' ]
+# VM ESXi hostname, need to define this if DRS is not configured
+vm_esxi_hostname: ""
