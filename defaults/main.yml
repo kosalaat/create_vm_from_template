@@ -34,6 +34,8 @@ vm_cpu_per_socket: 1
 vm_hardware_ver: 12
 # VM Network Name
 vm_network_name: ''
+# VM network connected upon startup
+vm_network_connected: True
 # VM IP address
 vm_ip_address: ''
 # VM IP Netmask
