@@ -28,7 +28,7 @@
     validate_certs: False
     folder: "{{ vcenter_folder }}" 
     datacenter: "{{ vcenter_datacenter }}"
-    cluster: "{{ vcenter_cluster }}"
+#    cluster: "{{ vcenter_cluster }}"
     esxi_hostname: "{{ vm_esxi_hostname }}"
     name: "{{ vm_name }}"
     state: poweredon
@@ -60,4 +60,5 @@
     name: "{{ vm_name }}"
     ansible_host: "{{ vminstance.instance.hw_eth0.ipaddresses[0] }}"
     group: "{{ vm_inventory_group }}"
+  delegate_to: localhost
   when: vm_inventory_group != ""
